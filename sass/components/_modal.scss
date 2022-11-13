@@ -1,0 +1,213 @@
+/*Модальне вікно*/
+.backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    transition: opacity var(--shift);
+  }
+  .modal {
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+  
+    background-color: var(--color-fone);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .modal-close {
+    width: 30px;
+    height: 30px;
+    background: var(--color-fone);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    @extend %alignlist;
+    justify-content: center;
+  
+    cursor: pointer;
+  
+    & svg{
+      transition: fill var(--shift);
+    }
+  }
+  
+  .modal-close:hover svg{
+    fill: var(--color-active);
+   }
+   .modal-close:hover ~ .form-title{
+    font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--color-primary);
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   }
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    
+    & .modal {
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  /*Форма*/
+  .form-title {
+    margin-bottom: 12px;
+  
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--color-primary);
+  
+    transition: text-shadow var(--shift);
+    }
+  .input-name{
+    display: block;
+    font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--color-second);
+  margin-bottom: 4px;
+  
+  }
+  
+  .input-wrap {
+    position: relative;
+    
+  }
+  .indent{
+    margin-bottom: 20px;
+  }
+  .input-label{
+    display: block;
+    margin-bottom: 10px;
+  }
+  .modal-input {
+    width: 100%;
+    height: 40px;
+    
+  
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    color: var(--color-primary);
+    outline: transparent;
+    transition: border-color var(--shift), fill var(--shift);
+    &:focus {
+      border-color: var(--color-active);
+      }
+  
+  }
+ 
+  
+  .modal-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill var(--shift);
+  
+    .modal-input:focus + &{
+      fill: var(--color-active);
+    }
+  }
+  .modal-text {
+    padding: 16px 12px;
+    
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    outline: transparent;
+  
+    transition: border-color var(--shift);
+
+    &:focus{
+      border-color: var(--color-active);
+    }
+  
+    &::placeholder{
+      font-size: 12px;
+    line-height: 1.17;
+    color: rgba(117, 117, 117, 0.5);
+    }
+  }
+ 
+  
+  .check-group{
+      text-align: center;
+      }
+  .check{
+    appearance: none;
+
+    &:checked + .icon-box{
+      content: '';
+      width: 16px;
+      height: 15px;
+    
+      background-image: url(../images/icon-check.svg);
+    background-repeat: no-repeat;
+     fill: none;
+    }
+  }
+  .checkbox{
+    color: #757575;
+  }
+  
+  
+  
+  .link-agree{
+      line-height: 2;
+    color: var(--color-active);
+   transition: color var(--shift);
+   text-decoration:underline;
+   transition: color var(--shift);
+  
+   &:focus, &:hover{
+   color: var(--color-hero);
+   }
+  }
+  
+  .modal-button {
+    display: block;
+    margin: 0 auto;
+  margin-top: 30px;
+    padding: 10px 52px;
+  
+    border: none;
+    border-radius: 4px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+  
+    color: var(--color-fone);
+    background-color: var(--color-active);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  
+    transition: background-color var(--shift);
+  
+  &:hover, &:focus {
+    background-color: var(--color-hero);
+  }
+}
+  

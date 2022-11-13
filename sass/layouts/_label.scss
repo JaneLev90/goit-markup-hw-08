@@ -1,0 +1,39 @@
+/*Секція 2*/
+
+.benefits__icon::before {
+    content: "";
+    display: block;
+    background-color: var(--color-background);
+    height: 120px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .icon-antenna::before {
+    background-image: url(../images/antenna.svg);
+  }
+  .icon-clock::before {
+    background-image: url(../images/clock.svg);
+  }
+  .icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+  }
+  .icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+  }
+  
+  .benefits__title {
+    margin-bottom: 10px;
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+  .benefits__text {
+    margin-bottom: 0;
+  
+    line-height: 1.7;
+    color: var(--color-second);
+  }
