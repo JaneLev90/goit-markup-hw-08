@@ -74,11 +74,20 @@ body {
 }
 
 .container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 
 /*header*/
@@ -180,20 +189,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   padding: 200px 0;
-  max-width: 1600px;
-  height: 600px;
   margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 .hero__title {
   margin: 0 auto;
-  width: 696px;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  line-height: 1.4;
+  line-height: 1.62;
   color: var(--color-fone);
 }
 
@@ -216,6 +223,40 @@ body {
 }
 
 /*Секція 2*/
+@media screen and (min-width: 1600px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .benefits__lists {
+    display: inline;
+  }
+}
+
+.benefits__icon {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .benefits__icon {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .benefits__icon {
+    width: 270px;
+  }
+}
+
 .benefits__icon::before {
   content: "";
   display: block;
@@ -252,15 +293,21 @@ body {
 }
 
 .benefits__text {
-  margin-bottom: 0;
+  margin-bottom: 30px;
   line-height: 1.7;
   color: var(--color-second);
 }
 
 /* section*/
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1600px) {
+  .section {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-lists {
@@ -298,14 +345,28 @@ body {
 }
 
 /*Секція Команда*/
-.list-profy {
+.profy {
   background-color: var(--color-background);
 }
 
-.section-list-profy {
+@media screen and (min-width: 768px) {
+  .profy__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .profy__list {
+    display: inline-block;
+  }
+}
+
+.profy__item {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
 }
 
 .list-face {
@@ -322,7 +383,7 @@ body {
   color: var(--color-primary);
 }
 
-.profy {
+.profesion {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
@@ -632,8 +693,8 @@ body {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: var(--color-fone);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
