@@ -93,6 +93,7 @@ body {
 /*header*/
 .nav {
   border-bottom: 1px solid #eeeeee;
+  position: relative;
 }
 
 .nav__link {
@@ -207,6 +208,105 @@ body {
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: fill var(--shift);
+}
+.menu-button:hover, .menu-button:focus {
+  fill: var(--color-active);
+}
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-fone);
+  padding-left: 40px;
+  width: 480px;
+  height: 800px;
+}
+.menu-container.is-open {
+  display: block;
+}
+
+.navigationmenu__item {
+  margin-bottom: 35px;
+}
+.navigationmenu__item:last-child {
+  margin-bottom: 302px;
+}
+
+.navigationmenu__page {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--color-primary);
+}
+.navigationmenu__page:hover, .navigationmenu__page:focus {
+  color: var(--color-active);
+}
+
+.menucontacts__item {
+  margin-bottom: 32px;
+}
+.menucontacts__item:last-child {
+  margin-bottom: 64px;
+}
+
+.menucontacts__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--color-active);
+  transition: color var(--shift);
+}
+.menucontacts__tel:focus {
+  color: var(--color-hero);
+}
+
+.menucontacts__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 0.86;
+  letter-spacing: 0.02em;
+  color: var(--color-second);
+  transition: color var(--shift);
+}
+.menucontacts__mail:focus {
+  color: var(--color-hero);
+}
+
+.nav-sosials-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--color-active);
 }
 
 /*hero*/
