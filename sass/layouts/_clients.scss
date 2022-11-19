@@ -3,9 +3,31 @@
 .clients__lists {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
-}
 
+ 
+  @media screen and (min-width: 768px) and  (max-width: 1559px) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 60px;
+ }
+ @media screen and (min-width: 1600px) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: inherit;
+    gap: 0px;
+}
+}
+.clients__item{
+ 
+  @media screen and (min-width: 1600px) {
+  margin-right: 30px;
+  flex-wrap: inherit;
+}
+}
 .clients__link {
   width: 170px;
   height: 92px;

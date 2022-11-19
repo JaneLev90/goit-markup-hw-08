@@ -5,12 +5,26 @@
     padding-bottom: 60px;
     background-color: var(--color-backdark);
   
-   & .container {
+   @media screen and (min-width: 1600px) {
+    & .container {
       display: flex;
       align-items: baseline;
     }
+   }
   }
-  
+  .adress-box{
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      margin-top: 20px;
+        }
+    @media screen and (min-width: 1600px) {
+      text-align: inherit;
+      
+    }
+  }
   .footer-list {
     display: inline-block;
     margin-top: 20px;
@@ -62,14 +76,21 @@
   }
   
   .socials-box {
-    margin-left: 70px;
-   
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+    display: inline-block;
+    text-align: center;
+        margin-left: 165px;
   }
+}
   .socials {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--color-fone);
+    margin-bottom: 20px;
   }
   .footer-list {
     display: flex;
@@ -99,7 +120,15 @@
     fill: var(--color-fone);
   }
   .input-footer{
+    
+    display: block;
+    text-align: center;
+
     margin-left: auto;
+    @media screen and (min-width: 1600px) {
+text-align: inherit;
+      margin-left: 90px;
+    }
   }
   .footer-button {
     display: flex;
@@ -132,6 +161,7 @@
   .modal-input-footer{
     width: 358px;
     height: 50px;
+    margin-bottom: 20px;
     
   background-color: transparent;
     padding-left: 16px;

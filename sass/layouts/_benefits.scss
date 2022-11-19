@@ -4,27 +4,31 @@
   @media screen and (min-width: 1600px){
     padding-top: 94px;
     padding-bottom: 94px;
-
+    width: 1600px;
   }
 }
 .benefits__lists{
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1599px) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
+
   @media screen and (min-width: 1600px) {
-    display: inline;
+    display: flex;
+   
 }
 }
+
 .benefits__icon {
-  width: 100%;
+  
   @media screen and (min-width: 768px) {
    
     width: calc((100% - 30px) / 2);
       }
       @media screen and (min-width: 1600px) {
-        width: 270px;
+        
+        margin-right: 30px;
 }
 }
 

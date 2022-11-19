@@ -1,9 +1,12 @@
 /* section*/
   
 .section {
-display: none;
+  
+@media (max-width: 1599px){
+  display: none;
+}
 @media screen and (min-width: 1600px) {
- display: block;
+ 
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -13,7 +16,7 @@ display: none;
   .section-lists {
     display: flex;
     gap: 30px;
-    
+    justify-content: center;
     & li {
       position: relative;
     }

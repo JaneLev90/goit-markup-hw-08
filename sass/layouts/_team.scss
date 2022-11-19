@@ -3,23 +3,29 @@
     background-color: var(--color-background);
   }
   .profy__list{
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1599px) {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
       gap: 30px;
     }
-    @media screen and (min-width: 768px) {
-      display: inline-block;
+    @media screen and (min-width: 1600px) {
+      display: flex;
+      justify-content: center;
       
     }
   }
   .profy__item {
+    
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 30px;
+    @media screen and (min-width: 1600px) {
+    margin-right: 30px;
   }
+}
   .list-face {
     padding-top: 30px;
     padding-bottom: 30px;

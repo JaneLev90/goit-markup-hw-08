@@ -1,105 +1,124 @@
 /*header*/
 
-  .nav {
-    border-bottom: 1px solid #eeeeee;
-  }
-  .nav__main {
-    @extend %alignlist;
-  }
-  .nav__link {
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    color: var(--color-logo);
-  }
-  .nav__logo {
-    color: var(--color-active);
-  }
-  
-  .nav__position {
-    margin-left: 93px;
-   
-    & .current {
-      color: var(--color-active);
-      position: relative;
-    }
+.nav {
+  border-bottom: 1px solid #eeeeee;
+}
+.nav__main {
+  @extend %alignlist;
+}
+.nav__link {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--color-logo);
+}
+.nav__logo {
+  color: var(--color-active);
+}
+
+.nav__position {
+  margin-left: 93px;
  
+  & .current {
+    color: var(--color-active);
+    position: relative;
   }
 
-  .current::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-bottom: 2px;
-    background-color: var(--color-active);
-    border-radius: 2px;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-bottom: 2px;
+  background-color: var(--color-active);
+  border-radius: 2px;
+}
+
+.navigation__list {
+  @media (max-width: 767px){
+    display: none;
   }
-  
-  .navigation__list {
+  @media screen and (min-width: 768px) {
     display: flex;
- 
+    justify-content: center;
     > li:not(:last-child) {
       margin-right: 50px;
     }
   }
-  
-  .navigation__page {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  
-    font-weight: 500;
-    line-height: 1.1;
-    color: var(--color-primary);
-    cursor: pointer;
-  
-    transition: color var(--shift);
-  
-    &:hover, &:focus {
-      color: var(--color-active);
-    }
-  }
-  
+  @media screen and (min-width: 1600px){
+  display: flex;
 
-  .nav__contacts {
-    display: flex;
-    margin-left: auto;
-  
   > li:not(:last-child) {
-      margin-right: 50px;
-    }
+    margin-right: 50px;
   }
-  
-  
-  .contacts__link {
-    font-weight: 500;
-    line-height: 1.1;
-    @extend %alignlist;
-    color: var(--color-second);
-  
-    transition: color var(--shift);
-  
-    &:hover, &:focus {
-      color: var(--color-active);
-    }
+}
+}
+
+.navigation__page {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--color-primary);
+  cursor: pointer;
+
+  transition: color var(--shift);
+
+  &:hover, &:focus {
+    color: var(--color-active);
   }
-  
-  
- 
-  .contacts__envelope {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: currentColor;
+}
+
+
+.nav__contacts {
+  @media (max-width: 767px){
+    display: none;
   }
-  .contacts__smartphon {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: currentColor;
+  @media screen and (min-width: 768px){
+    margin-left: auto;
   }
-  
+  @media screen and (min-width: 1600px){
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  > li:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+}
+
+
+.contacts__link {
+  font-weight: 500;
+  line-height: 1.1;
+  @extend %alignlist;
+  color: var(--color-second);
+
+  transition: color var(--shift);
+
+  &:hover, &:focus {
+    color: var(--color-active);
+  }
+}
+
+
+
+.contacts__envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contacts__smartphon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
