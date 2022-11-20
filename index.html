@@ -36,12 +36,21 @@
             <use class="icon-cross" href="./images/sprite1.svg#icon-closemenu"></use>
           </svg>
         </button>
+
         <div class="menu-container is-open"
         id="menu-container"
         data-menu>
 
-
         <nav class="navigationmenu">
+          <button type="button" class="menu-button is-open"
+        aria-expanded="false"
+        data-menu-button>
+          <svg width="40" height="40"
+           aria-label="Виклик мобільного меню"
+           aria-controls="menu-container">
+                        <use class="icon-cross" href="./images/sprite1.svg#icon-closemenu"></use>
+          </svg>
+        </button>
           <ul class="navigationmenu__list">
             <li class="navigationmenu__item">
               <a class="navigationmenu__page" href="./index.html">Студія</a>
@@ -54,6 +63,7 @@
             </li>
           </ul>
         </nav>
+        
         <ul class="navmenu__contacts contacts">
           
           <li class="menucontacts__item">
@@ -196,11 +206,23 @@
           <h2 class="title">Наша команда</h2>
           <ul class="profy__list">
             <li class="profy__item">
-              <img
+              <picture>
+                <source srcset="./images/demjanenko.jpg 1x,
+                ./images/demjanenko-2x.jpg 2x"
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/demjanenko-tab.jpg 1x,
+                ./images/demjanenko-tab-2x.jpg 2x"
+                media="(min-width: 768px)"/>
+                <source srcset="./images/demjanenko-mob.jpg 1x,
+                ./images/demjanenko-mob-2x.jpg 2x"
+                media="(min-width: 320px)"/>
+                <img
                 src="./images/demjanenko.jpg"
                 alt="Ігор Дем'яненко"
-                width="270"
+                width="450"
               />
+              </picture>
+              
               <div class="list-face">
                 <h3 class="name">Ігор Дем'яненко</h3>
                 <p class="profesion" lang="en">Product Designer</p>
@@ -242,7 +264,20 @@
               </div>
             </li>
             <li class="profy__item">
-              <img src="./images/repina.jpg" alt="Ольга Рєпіна" width="270" />
+              <picture>
+                <source srcset="./images/repina.jpg 1x, 
+                ./images/repina-2x.jpg 2x"
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/repina-tab.jpg 1x, 
+                ./images/repina-tab-2x.jpg 2x"
+                media="(min-width: 768px)"/>
+                <source srcset="./images/repina-mob.jpg 1x, 
+                ./images/repina-mob-2x.jpg 2x"
+                media="(min-width: 420px)"/>
+
+                <img src="./images/repina.jpg" alt="Ольга Рєпіна" width="450" />
+              </picture>
+              
               <div class="list-face">
                 <h3 class="name">Ольга Рєпіна</h3>
                 <p class="profesion" lang="en">Frontend Developer</p>
@@ -283,11 +318,22 @@
               </div>
             </li>
             <li class="profy__item">
+              <picture>
+                <source srcset="./images/tarasov.jpg 1x, 
+                ./images/tarasov-2x.jpg 2x
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/tarasov-tab.jpg 1x, 
+                ./images/tarasov-tab-2x.jpg 2x
+                media="(min-width: 768px)" />
+                <source srcset="./images/tarasov-mob.jpg 1x, 
+                ./images/tarasov-mob-2x.jpg 2x
+                media="(min-width: 320px)"/>
               <img
                 src="./images/tarasov.jpg"
                 alt="Микола Тарасов"
-                width="270"
+                width="450"
               />
+              </picture>
               <div class="list-face">
                 <h3 class="name">Микола Тарасов</h3>
                 <p class="profesion" lang="en">Marketing</p>
@@ -328,11 +374,22 @@
               </div>
             </li>
             <li class="profy__item">
+              <picture>
+                <source srcset="./images/ermakov.jpg 1x, 
+                ./images/ermakov-2x.jpg 2x
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/ermakov-tab.jpg 1x, 
+                ./images/ermakov-tab-2x.jpg 2x
+                media="(min-width: 768px)" />
+                <source srcset="./images/ermakov-mob.jpg 1x, 
+                ./images/ermakov-mob-2x.jpg 2x
+                media="(min-width: 320px)" />
               <img
                 src="./images/ermakov.jpg"
                 alt="Михайло Єрмаков"
-                width="270"
+                width="450"
               />
+              </picture>
               <div class="list-face">
                 <h3 class="name">Михайло Єрмаков</h3>
                 <p class="profesion" lang="en">UI Designer</p>

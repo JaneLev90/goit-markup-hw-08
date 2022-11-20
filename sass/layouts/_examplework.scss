@@ -72,7 +72,8 @@
     margin-bottom: 0;
   }
   .portfolio-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
   
     transition: box-shadow var(--shift);
   
