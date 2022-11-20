@@ -151,19 +151,22 @@
   }
 }
 .menu-container{
-display: none;
+
 
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--color-fone);
   padding-left: 40px;
-  width: 480px;
-  height: 800px;
+  transform: translateX(100%);
+  
+  transition: transform var(--shift) ease-in-out; 
   
   &.is-open{
-    display: block;
+    
+    transform: translateX(0);
   }
 }
 
