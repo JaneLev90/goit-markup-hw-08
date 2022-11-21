@@ -26,9 +26,9 @@
         <a class="nav__link" href="./index.html" lang="en">
           <span class="nav__logo">Web</span>Studio</a
         >
-        <button type="button" class="menu-button-header is-open"
+        <button type="button" class="menu-button-header js-open-menu"
         aria-expanded="false"
-        data-menu-button>
+        aria-controls="mobile-menu">
           <svg width="40" height="40"
            aria-label="Виклик мобільного меню"
            aria-controls="menu-container">
@@ -520,16 +520,15 @@
       </div>
     </footer>
 <!--Модальне вікно меню-->
-    <div class="menu-container"
-        id="menu-container"
-        data-menu>
+    <div class="menu-container js-menu-container"
+        id="menu-menu">
 
         <nav class="navigationmenu">
-          <button type="button" class="menu-button is-open"
+          <button type="button" class="menu-button js-close-menu"
         aria-expanded="false"
         data-menu-button>
           <svg width="40" height="40"
-           aria-label="Виклик мобільного меню"
+           aria-label="Закрити мобільне меню"
            aria-controls="menu-container">
                         <use class="icon-cross" href="./images/sprite1.svg#icon-closemenu"></use>
                     
