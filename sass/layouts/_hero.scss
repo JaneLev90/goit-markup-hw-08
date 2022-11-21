@@ -3,6 +3,10 @@
     
     background-color: var(--color-backdark);
     text-align: center;
+
+    width: 100%;
+    height: 400px;
+    padding: 118px 0;
    
     background-image: linear-gradient(
         to right,
@@ -30,7 +34,7 @@
     url(../../images/hero-mob-2x.jpg);
   }
 
-    @media screen and (min-whidth: 768px) and (max-width: 1599px) {
+    @media screen and (min-whidth: 768px) and (max-width: 1199px) {
       background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -48,7 +52,7 @@
         url(../../images/hero-tab-2x.jpg);
       }
     }
-    @media screen and (min-whidth: 1600px) {
+    @media screen and (min-whidth: 1200px) {
       background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
