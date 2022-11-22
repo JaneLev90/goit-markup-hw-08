@@ -36,7 +36,7 @@
 }
 }
 .clients__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -47,7 +47,12 @@
   color: var(--color-svg);
 
   transition: color var(--shift), border var(--shift);
-
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
   &:hover,
   &:focus {
     border: 1px solid #188ce8;

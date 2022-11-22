@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
     
-    width: 100vw;
-    height: 796px;
+    width: 100%;
+    height: 100%;
     background-color: var(--color-fone);
     padding-left: 40px;
     transform: translateX(100%);
@@ -12,8 +12,9 @@
     transition: transform var(--shift) ease-in-out; 
     
     &.is-open{
-      display: block;
-      position: absolute;
+      display: flex;
+      flex-direction: column;
+
     top: 0;
     left: 0;
       transform: translateX(0);
@@ -43,9 +44,7 @@
   
   .navigationmenu__item{
     margin-bottom: 35px;
-    &:last-child{
-      margin-bottom: 302px;
-    }
+   
   }
   .navigationmenu__page{
     
@@ -59,7 +58,13 @@
       color: var(--color-active);
     }
   }
-  
+  .page__color{
+    color: var(--color-active);
+  }
+
+  .navmenu__contacts{
+margin-top: auto;
+  }
   .menucontacts__item{
   margin-bottom: 32px;
   &:last-child{
@@ -95,10 +100,24 @@
   }
   .nav-sosials{
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
+    padding-bottom: 48px;
+
   }
   .nav-sosials-item{
-  margin-right: 20px;
+  margin-right: 10px;
+  &:not(:last-child):after{
+    content: "";
+      position: absolute;
+         width: 22px;
+              
+      border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  position: inherit;
+      margin-left: 10px;
+      
+  }
   }
   .nav-sosials-link{
     position: relative;
@@ -109,14 +128,6 @@
   letter-spacing: 0.02em;
   
   color: var(--color-active);
-  &::after{
-    content: "";
-      position: absolute;
-         width: 22px;
-              background-color: var(--color-second);
-      border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
-  position: inherit;
-      margin-left: 10px;
-  }
+
+  
 }

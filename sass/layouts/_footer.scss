@@ -12,13 +12,23 @@
     }
    }
   }
+  .footer-position{
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 60px;
+    }
+    
+  }
   .adress-box{
     display: block;
     text-align: center;
     margin-bottom: 60px;
     @media screen and (min-width: 768px) {
       display: inline-block;
-      margin-top: 20px;
+      margin-bottom: 0px;
         }
     @media screen and (min-width: 1200px) {
       text-align: inherit;
@@ -82,7 +92,7 @@
     @media screen and (min-width: 768px) {
     display: inline-block;
     text-align: center;
-        margin-left: 165px;
+    margin-bottom: 0px;
   }
   @media screen and (min-width: 1200px){
     margin-left: 94px;
@@ -127,7 +137,7 @@
     display: block;
     text-align: center;
 
-    margin-left: auto;
+    
     @media screen and (min-width: 1200px) {
 text-align: inherit;
       margin-left: 90px;
@@ -172,7 +182,7 @@ text-align: inherit;
   }
   .modal-input-footer{
     width: 100%;
-    max-width: 450px;
+    width: 450px;
     
     height: 50px;
     margin-bottom: 20px;
