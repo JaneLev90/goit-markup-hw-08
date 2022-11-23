@@ -262,19 +262,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
-  margin-bottom: 60px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob-2x.jpg);
   }
 }
-@media screen and (min-whidth: 768px) and (max-width: 1199px) {
+@media screen and (min-whidth: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab.jpg);
   }
 }
-@media screen and (min-whidth: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-whidth: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-whidth: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-whidth: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+@media screen and (min-whidth: 768px) and (min-device-pixel-ratio: 2), screen and (min-whidth: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-whidth: 768px) and (min-resolution: 192dpi), screen and (min-whidth: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab-2x.jpg);
   }
@@ -322,13 +321,13 @@ body {
 
 /*Секція 2*/
 .benefits {
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .benefits {
     padding-top: 94px;
     padding-bottom: 94px;
-    width: 1200px;
   }
 }
 
@@ -402,7 +401,7 @@ body {
   color: var(--color-second);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 768px) {
   .benefits__icon:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -493,7 +492,6 @@ body {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .profy__item {
@@ -572,7 +570,6 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -946,7 +943,7 @@ body {
 
 .modal-input-footer {
   width: 100%;
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   margin-bottom: 20px;
   background-color: transparent;
@@ -957,9 +954,14 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal-input-footer {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-input-footer {
-    width: 358px;
+    min-width: 358px;
   }
 }
 
