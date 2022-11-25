@@ -31,10 +31,15 @@ padding-bottom: 60px;
         
         margin-right: 30px;
 }
+&:not(:last-child){
+  @media screen and (max-width: 767px){
+  margin-bottom: 30px;
+  }
 }
 
 
-.benefits__icon::before {
+
+&::before {
     content: "";
     display: block;
     background-color: var(--color-background);
@@ -43,6 +48,7 @@ padding-bottom: 60px;
     background-repeat: no-repeat;
     background-position: center;
   }
+}
   .icon-antenna::before {
     background-image: url(../images/antenna.svg);
   }
@@ -76,8 +82,4 @@ padding-bottom: 60px;
     line-height: 1.7;
     color: var(--color-second);
   }
-  .benefits__icon:not(:last-child){
-    @media screen and (max-width: 768px){
-    margin-bottom: 30px;
-    }
-  }
+  

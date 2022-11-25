@@ -13,7 +13,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero-mob.jpg);
+      url(../images/heromob.jpg);
    
       background-size: cover;
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero-mob-2x.jpg);
+    url(../images/heromob@2x.jpg);
   }
 
     @media screen and (min-whidth: 768px)  {
@@ -40,7 +40,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero-tab.jpg);
+      url(../images/herotab.jpg);
 
       @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -50,7 +50,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/hero-tab-2x.jpg);
+        url(../images/herotab@2x.jpg);
       }
     }
     @media screen and (min-whidth: 1200px) {
@@ -68,7 +68,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/hero-2x.jpg);
+        url(../images/hero@2x.jpg);
       }
     }
   }
