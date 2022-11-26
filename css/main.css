@@ -257,23 +257,23 @@ body {
   height: 400px;
   padding: 118px 0;
   max-width: 1600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heromob.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heromob.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heromob@2x.jpg);
   }
 }
-@media screen and (min-whidth: 768px) {
+@media screen and (min-whidth: 768px) and (max-whidth: 1199px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herotab.jpg);
   }
 }
-@media screen and (min-whidth: 768px) and (min-device-pixel-ratio: 2), screen and (min-whidth: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-whidth: 768px) and (min-resolution: 192dpi), screen and (min-whidth: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-whidth: 768px) and (max-whidth: 1199px) and (min-device-pixel-ratio: 2), screen and (min-whidth: 768px) and (max-whidth: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-whidth: 768px) and (max-whidth: 1199px) and (min-resolution: 192dpi), screen and (min-whidth: 768px) and (max-whidth: 1199px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herotab@2x.jpg);
   }
@@ -626,6 +626,12 @@ body {
 }
 
 /*Секція Приклади робіт*/
+@media screen and (min-width: 1200px) {
+  .works-container {
+    width: 100%;
+  }
+}
+
 .works-button-list {
   display: flex;
   flex-wrap: wrap;

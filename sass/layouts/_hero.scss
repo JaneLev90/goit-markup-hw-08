@@ -8,21 +8,24 @@
     height: 400px;
     padding: 118px 0;
    max-width: 1600px;
-    background-image: linear-gradient(
+   
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+ 
+      
+   margin: 0 auto;
+
+   
+   background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/heromob.jpg);
    
-      background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  
-       
-    margin: 0 auto;
     
-
+   
     @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -33,8 +36,8 @@
     ),
     url(../images/heromob@2x.jpg);
   }
-
-    @media screen and (min-whidth: 768px)  {
+    
+    @media screen and (min-whidth: 768px) and (max-whidth: 1199px)  {
       background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
